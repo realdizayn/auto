@@ -11,12 +11,12 @@ def OffMiner():
    banneredit()
    try:
        print("ตัวอย่าง:")
-       print(" \033[93mstratum+tcp://ap.luckpool.net:3956\033[00m")
-       print(" \033[93mstratum+tcp://verushash.asia.mine.zergpool.com:3300\033[00m")
+       print(" \033[93mstratum+tcp://eu.luckpool.net:3960\033[00m")
+       print(" \033[93mstratum+tcp://eu.luckpool.net:3960\033[00m")
        pool = input(" pool : ")
        print("\033[35m-----------------------------------------\033[0m")
         
-       print("ตัวอย่าง: \033[93mRAGmdv911tnu6yaW5g3W8zkw6mJQqZatWQ\033[00m")
+       print("ตัวอย่าง: \033[RPNz1a1XR8pphxi6ym5dph1EzqLAAQRtWE\033[00m")
        wallet = input("wallet: ")
        print("\033[35m-----------------------------------------\033[0m")
 
