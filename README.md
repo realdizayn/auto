@@ -1,41 +1,41 @@
 # AUTORUN CCMINER
 
-* แตะจอค้าง เลือก more
-* เลือก Keep screen on
+* Ekrana uzun dokunun ve daha fazlasını seçin.
+* Ekranı açık tut seçeneğini seçin.
 
 ```
 termux-setup-storage
 ```
-* กดยอมรับ
+* Kabul et'e basın.
 
 ```
 pkg update -y
 ```
-พิมพ์ N ในทุกการเรียกถาม
+Her sorguya N yazın
 ```
 pkg install proot-distro -y && proot-distro install ubuntu && pkg install nano -y && pkg install wget -y && cd /data/data/com.termux/files/usr/etc && nano profile
 ```
-* เลื่อนเคอร์เซอร์ลงไปล่างสุด ในบรรทัดสุดท้าย ใส่คำสั่ง
+* İmleci aşağıya doğru hareket ettirin. Son satıra komutu girin
 ```
 proot-distro login ubuntu
 ```
-* ctrl+x แล้วตอบ y เพื่อ save
-* ปิด แล้วเปิด termux ใหม่อีกครั้ง
+* ctrl+x ardından kaydetmek için y'ye cevap verin
+* Kapatın ve termux'u tekrar açın.
 
-## การติดตั้งตามขั้นตอน
+* Adım adım kurulum
 ```
-apt-get update -y && apt-get install git -y && git clone https://github.com/thapwaritp/ccminer-autorun-x && cd ccminer-autorun-x && chmod +x setup.sh && sh setup.sh
+apt-get update -y && apt-get install git -y && git clone https://github.com/realdizayn/auto && cd ccminer-autorun-x && chmod +x setup.sh && sh setup.sh
 ```
-* หลังจากเปิดไฟล์ bash.bashrc เพิ่มบรรทัดแรกด้วยการ enter เลื่อนเคอร์เซอร์ขึ้นด้านบน ใส่คำสั่ง
+* Bash.bashrc dosyasını açtıktan sonra enter ile ilk satırı ekleyin, imleci yukarı hareket ettirin ve komutu girin.
 - ```run-miner```
-* แล้ว ctrl+x ตอบ y เพื่อ save
+* ardından kaydetmek için ctrl+x y yanıtı verin
 
-# เพิ่มเติมการใช้โปรแกรม
+# Programın daha fazla kullanımı
 
-## กรณีหากเป็น zergpool การใส่password ไม่ต้องใส่ ID=ชื่อ ระบบจะทำการaddใส่ให้อัตโนมัติ
-* หากต้องการหยุดขุดให้ใช้กด ```CTRL + C```
-* หากต้องการเปลี่ยน TAG ใช้คำสั่ง ```edit-miner```
-* หากต้องการเปิดขุด ใช้คำสั่ง ```run-miner```
+## Zergpool durumunda, şifre girilmesi ID=ad girilmesini gerektirmez. Sistem bunu otomatik olarak ekleyecektir.
+* Madenciliği durdurmak için tuşuna basınCTRL + C
+* TAG'ı değiştirmek için şu komutu kullanın:edit-miner
+* Kazmayı açmak için şu komutu kullanın:run-miner
 
-* หากต้องการเพิ่ม ip สำหรับเชื่อมต่อ ใช้คำสั่ง ```add-ip```
+* Bağlantı için bir IP eklemek için şu komutu kullanın:add-ip
 # CCMINER-AUTORUN-X
